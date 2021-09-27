@@ -6,7 +6,7 @@
 - 멀티쓰레드 환경에서 발생하는 문제를 원천적으로 해결.
 
 
-### 1) Immutable 패턴 예 
+### 1) Immutable 패턴 예 1
 ```Java
 String a = "WHO";
 String b = "ARE YOU";
@@ -17,7 +17,7 @@ String c = a.concat(b); // ---> Immutable 패턴이 적용된 concat 메소드 �
 
 
 
-
+### 2) Immutable 패턴 예 2
 - 아래의 코드는 JDK의 String 클래스의 소스코드에 포함되어 있는 concat과 substring 메소드이다.
 ```Java
 public String concat(String str) {
