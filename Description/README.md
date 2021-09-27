@@ -13,7 +13,7 @@ String b = "ARE YOU";
 String c = a.concat(b); // ---> Immutable 패턴이 적용된 concat 메소드 실행으로 새로운 String 인스턴스가 생성되어 c에 인스턴스 참조 값이 저장. 
 ```
 - 위 코드를 실행하면 concat 메소드 실행 시, 새로운 String 인스턴스가 생성된다. 
-- 즉, 기존의 String 변수 a나 b의 값이 변형되는 것이 아닌 새로운 String 인스턴스를 생성하고 값을 저장한다는 것이 핵심이다.<br/><br/><br/><br/>
+- 즉, 기존의 String 변수 a나 b의 값이 변형되는 것이 아닌 새로운 String 인스턴스를 생성하고 값을 저장한다는 것이 핵심이다.<br/><br/>
 
 
 
