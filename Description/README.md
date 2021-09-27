@@ -5,7 +5,18 @@
 - ex) JAVA를 사용하면서 우리도 모르게 Immutable 패턴을 사용하고 있는데 대표적인 예가 String 클래스이다.
 
 
-### 1) Immutable 패턴 예
+### 1) Immutable 패턴 예 
+```Java
+String a = "WHO";
+String b = "ARE YOU";
+String c = a.concat(b); // ---> Immutable 패턴이 적용된 concat 메소드 실행으로 새로운 String 인스턴스가 생성되어 c에 인스턴스 참조 값이 저장. 
+```
+- 위 코드를 실행하면 concat 메소드 실행 시, 새로운 String 인스턴스가 생성된다. 
+- 즉, 기존의 String 변수 a나 b의 값이 변형되는 것이 아닌 새로운 String 인스턴스를 생성하고 값을 저장한다는 것이 핵심이다.
+
+
+
+
 - 아래의 코드는 JDK의 String 클래스의 소스코드에 포함되어 있는 concat과 substring 메소드이다.
 ```Java
 public String concat(String str) {
@@ -35,3 +46,6 @@ public String substring(int beginIndex, int endIndex) {
 }
 ```
 - 코드에서 알 수 있듯이, 문자열을 변형시키는 2가지 메소드인 concat과 substring은 내부적으로 새로운 문자열 버퍼를 구성하고 스트링 인스턴스를 생성과 문자열 변형 작업을 수행한 뒤에 마지막 return 시, 반드시 새로운 String 인스턴스를 생성하고 변형된 문자열을 저장하여 반환한다. 
+
+
+- 이러한 Immutable 패턴 방식은 멀티쓰레드 환경에서 발생하는 다양한 문제들(ex : 공용 인스턴스의 값 변화로 인해 다른 쓰레드에 원치않는 영향을 끼치는)을 원천적으로 해결할 수 있다.
