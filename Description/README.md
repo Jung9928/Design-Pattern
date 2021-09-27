@@ -6,7 +6,7 @@
 
 
 ### 1) Immutable 패턴 예
-- 아래의 코드는 JDK의 String 클래스의 소스코드에 포함되어 있는 concat과 subString 메소드이다.
+- 아래의 코드는 JDK의 String 클래스의 소스코드에 포함되어 있는 concat과 substring 메소드이다.
 ```Java
 public String concat(String str) {
     int otherLen = str.length();
@@ -34,4 +34,4 @@ public String substring(int beginIndex, int endIndex) {
     return ((beginIndex == 0) && (endIndex == count)) ? this : new String(offset + beginIndex, endIndex - beginIndex, value);   // ---> 새롭게 만들어진 문자들이 할당된 String 인스턴스를 새로 생성하여 반환.
 }
 ```
-- 코드에서 알 수 있듯이, 문자열을 변형시키는 2가지 메소드인 concat과 subString은 내부적으로 새로운 문자열 버퍼를 구성하고 스트링 인스턴스를 생성과 문자열 변형 작업을 수행한 뒤에 마지막 return 시, 반드시 새로운 String 인스턴스를 생성하고 변형된 문자열을 저장하여 반환한다. 
+- 코드에서 알 수 있듯이, 문자열을 변형시키는 2가지 메소드인 concat과 substring은 내부적으로 새로운 문자열 버퍼를 구성하고 스트링 인스턴스를 생성과 문자열 변형 작업을 수행한 뒤에 마지막 return 시, 반드시 새로운 String 인스턴스를 생성하고 변형된 문자열을 저장하여 반환한다. 
