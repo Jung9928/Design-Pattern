@@ -3,7 +3,7 @@
 
 
 ## 목차
-[1. Immutable 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)
+[1. Immutable 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)   
 [2. Strategy 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)  
 [3. Adapter 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)   
 [4. Template Method 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)   
