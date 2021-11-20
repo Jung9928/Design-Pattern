@@ -19,13 +19,15 @@
 
 ### 객체지향 프로그래밍에서 어댑터는 아래와 같은 상황에서 보통 쓰인다.
 ![image](https://user-images.githubusercontent.com/45419456/142729446-37667cc6-dbc7-4f89-bfd7-d3ad993b3ada.png)
+<br/><br/>
 
 ### 어댑터 패턴은 다음 2가지 형태로 사용된다.
 1) 클래스 어댑터 패턴 :  상속을 이용한 어댑터 패턴
-2) 인스턴스(오브젝트) 어댑터 패턴 : 위임을 이용한 어댑터 
+2) 인스턴스(오브젝트) 어댑터 패턴 : 위임을 이용한 어댑터 <br/><br/>
 
 ### Adapter 클래스 다이어그램 (인스턴스 어댑터)
 ![image](https://user-images.githubusercontent.com/45419456/142729407-57b261a3-9fbe-4146-bdd0-39fbf7d928e2.png)
+<br/><br/>
 
 #### 구성 요소
 - Client : Target 인터페이스를 요구하는 요소를 지닌 클래스 (220v 콘센트)
