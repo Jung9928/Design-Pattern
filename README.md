@@ -5,7 +5,7 @@
 ## 목차
 [1. Immutable 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description/Immutable%20Pattern)  
 [2. Strategy 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)  
-[3. Adapter 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)   
+[3. Adapter 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description/Adapter%20Pattern)   
 [4. Template Method 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)   
 [5. Producer-Consumer 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)   
 [6. Factory 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)   
