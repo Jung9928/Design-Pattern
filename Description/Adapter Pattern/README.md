@@ -24,5 +24,5 @@
 - Adaptee : Client의 Target 인터페이스를 요구하는 요소에 넣고자 하는 클래스 (110v 전압)
 - Adapter : Adaptee 클래스를 Target 인터페이스에 맞춰주는 클래스 (110v전압을 220v로 변환해주는 어댑터) <br/><br/>
 - 설명 
-1) Adapter는 Target 인터페이스의 request() 메소드를 구현하기 위해 Adaptee 클래스의 method1()메소드를 사용.
+1) Adapter는 Target 인터페이스의 request() 메소드를 구현하기 위해 Adaptee 클래스의 specificRequest()메소드를 사용.
 2) Client는 Adapter 클래스를 통해 Adaptee를 Target 인터페이스의 클래스처럼 사용. 
