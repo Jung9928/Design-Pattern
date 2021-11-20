@@ -19,6 +19,7 @@
 
 ### Adapter 클래스 다이어그램 (인스턴스 어댑터)
 ![image](https://user-images.githubusercontent.com/45419456/142729407-57b261a3-9fbe-4146-bdd0-39fbf7d928e2.png)
+#### 구성 요소
 - Client : Target 인터페이스를 요구하는 요소를 지닌 클래스 (220v 콘센트)
 - Target : 어떤 특정 인터페이스 (220v 전압)
 - Adaptee : Client의 Target 인터페이스를 요구하는 요소에 넣고자 하는 클래스 (110v 전압)
