@@ -10,7 +10,7 @@
 [5. Producer-Consumer 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)   
 [6. Factory 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)   
 [7. Abstact Factory 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)  
-[8. Singleton 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)   
+[8. Singleton 패턴](https://github.com/Jung9928/Design-Pattern/blob/master/Description/Singleton%20Pattern/README.md)   
 [9. ProtoType 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)   
 [10. Bridge 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)   
 [11. Composite 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)   
