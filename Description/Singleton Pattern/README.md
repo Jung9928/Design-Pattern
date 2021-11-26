@@ -13,3 +13,55 @@
 ### :collision: 단점
 - 싱글톤 인스턴스가 너무 많은 일을 하거나 많이 참조(공유)될 경우 다른 클래스와의 coupling(결합도)가 높아져 "개방-폐쇄 원칙"을 위배하게 된다. ----> 테스트하기 어려워지고 유지보수하기 까다로워진다.
 - 멀티쓰레드 환경에서 동기화처리를 안하면 인스턴스가 여러 개 생성되는 경우가 발생할 수 있다.
+
+
+### Singleton 코드 예시
+- Company.Java
+```Java
+package singleton;
+
+public class Company {
+    
+    // 전역공간에 최초로 한번 생성된 이후, 계속해서 사용될 싱글톤 인스턴스
+    private static Company instance = new Company();
+    
+    private Company() {}  // 접근지정자를 private으로 설정하여 외부에서 생성자 호출을 통해 인스턴스 생성을 못하도록 설정    
+
+    // Company 클래스 내부에서 생성된 instance를 외부에서 사용할 수 있도록 하는 메소드
+    public static Company getInstance() {
+        
+        // 혹시나 null이 반환될 경우를 대비하여 null-safe하도록 추가
+        if(instance == null)
+            instance = new Company();
+            
+        return instance;
+    }
+}
+```
+- CompanyTest.Java
+```Java
+public class CompanyTest {
+    
+    public static void main(String[] args) {
+        
+        Company c1 = Company.getInstance();
+        Company c2 = Company.getInstance();
+        
+        // 출력해보면 c1, c2인스턴스는 동일한 인스턴스 참조값이 출력된다.
+        System.out.println(c1);
+        System.out.println(c2);
+    }
+}
+```
+- 자바에서 쓰이는 Calender도 Singleton 패턴이 적용되어있어 new 키워드를 사용하여 생성자를 호출하는 것이 아니라 클래스명으로 접근하여 사용한다.
+```Java
+import java.util.Calender;
+
+public class CompanyTest {
+    
+    public static void main(String[] args) {
+        
+        Calender cal = Calender.getInstance();
+    }
+}
+```
