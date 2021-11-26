@@ -13,11 +13,10 @@
 <br/><br/>
 
 # Factory 패턴 코드 예시
-- Company.Java
 ```Java
 
 ```
-- CompanyTest.Java
+
 ```Java
 
 ```
