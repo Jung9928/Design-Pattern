@@ -30,7 +30,7 @@ public class Company {
     // Company 클래스 내부에서 생성된 instance를 외부에서 사용할 수 있도록 하는 메소드
     public static Company getInstance() {
         
-        // 혹시나 null이 반환될 경우를 대비하여 null-safe하도록 추가
+        // 혹시나 null이 반환될 경우를 대비(null-safe) 하기 위해 조건 추가
         if(instance == null)
             instance = new Company();
             
