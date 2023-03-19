@@ -24,6 +24,6 @@
 [19. Memento 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)    
 [20. Flyweight 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)    
 [21. Proxy 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)    
-[22. Command 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)
+[22. Command 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)    
 [23. Builder 패턴](https://github.com/Jung9928/Design-Pattern/tree/master/Description)
 
